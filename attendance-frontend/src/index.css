@@ -1,0 +1,31 @@
+/* Import Bootstrap CSS ចូលក្នុង Project */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* កំណត់ទំហំមូលដ្ឋានឲ្យពេញអេក្រង់ និង Font-family */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Khmer OS Battambang', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+/* កែសម្រួល scrollbar ឱ្យមើលទៅស្អាត និងទំនើប */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

@@ -1,0 +1,40 @@
+/* កំណត់ Layout ទូទៅនៃ App ទាំងមូល */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ផ្នែកកណ្តាល៖ តម្រៀប Sidebar និង Content ឱ្យនៅទន្ទឹមគ្នា (Horizontal Layout) */
+.main-body {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* ផ្នែក Sidebar នៅខាងឆ្វេង — ជាប់ (Sticky) ពេល Scroll */
+.sidebar-section {
+  width: 260px;
+  min-width: 260px;
+  background-color: #212529;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  align-self: flex-start; /* ✅ ចាំបាច់សម្រាប់ sticky ដំណើរការត្រឹមត្រូវក្នុង flexbox */
+}
+
+/* ផ្នែក Content បង្ហាញ Page (Dashboard, Students, etc.) នៅខាងស្តាំ */
+.content-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
